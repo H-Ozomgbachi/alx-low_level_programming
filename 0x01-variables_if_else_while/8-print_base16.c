@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the pplication
- * Code to print base 16 values
- * Returns - zero 0 (Success)
+ * main - Entry point
+ * print hexadecimal
+ * Return: Always 0 (Success)
  */
 
 int main(void)
