@@ -10,7 +10,6 @@
 int _isalpha(int c)
 {
 	int isalpha = 0;
-
 	char i;
 	char j;
 
@@ -22,7 +21,6 @@ int _isalpha(int c)
 			break;
 		}
 	}
-	
 	for (j = 'A'; j <= 'Z'; j++)
 	{
 		if (j == c)
@@ -31,6 +29,5 @@ int _isalpha(int c)
 			break;
 		}
 	}
-
 	return (isalpha);
 }
