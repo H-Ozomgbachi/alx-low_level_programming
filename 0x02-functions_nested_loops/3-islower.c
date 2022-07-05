@@ -3,7 +3,7 @@
 
 /**
  * _islower - check if text is lower
- *
+ * @c: a character params
  * Return: Always 0 (Success)
  */
 
