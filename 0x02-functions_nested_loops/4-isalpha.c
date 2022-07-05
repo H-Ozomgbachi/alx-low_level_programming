@@ -23,7 +23,7 @@ int _isalpha(int c)
 		}
 	}
 	
-	for (j = 'A'; J <= 'Z'; j++)
+	for (j = 'A'; j <= 'Z'; j++)
 	{
 		if (j == c)
 		{
