@@ -13,15 +13,15 @@ int main(void)
 
 	fibonacci[0] = 1;
 	fibonacci[1] = 2;
-	printf("%d", "%d", fibonacci[0], fibonacci[1]);
+	printf("%ld", "%ld", fibonacci[0], fibonacci[1]);
 
 	for (i = 2; i < 50; i++)
 	{
 		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 		if (i == 49)
-			printf("%d\n", fibonacci[i]);
+			printf("%ld\n", fibonacci[i]);
 		else
-			printf("%d, ", fibonacci[i]);
+			printf("%ld, ", fibonacci[i]);
 	}
 
 	return (0);
