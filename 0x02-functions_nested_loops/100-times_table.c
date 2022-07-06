@@ -53,7 +53,7 @@ void putformat(int n)
 		_putchar(',');
 		_putchar(' ');
 		_putchar(n / 100 + '0');
-		_putchar(n / 10 + '0');
+		_putchar(n / 10 % 10 + '0');
 		_putchar(n % 10 + '0');
 	}
 }
