@@ -14,7 +14,7 @@ void print_to_98(int n)
 
 		while (x < 99)
 		{
-			printf("%d", x);
+			printf("%i", x);
 			if (x == 98)
 			{
 				break;
@@ -30,7 +30,7 @@ void print_to_98(int n)
 
 		while (y >= 98)
 		{
-			printf("%d", y);
+			printf("%i", y);
 			if (y == 98)
 				break;
 			_putchar(',');
