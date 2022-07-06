@@ -2,8 +2,6 @@
 
 /**
  * jack_bauer - print time
- * 
- * Return: zero
  */
 
 void jack_bauer(void)
