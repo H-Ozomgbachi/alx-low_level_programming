@@ -1,5 +1,8 @@
+#include "main.h"
+
 /**
  * _isupper - print whether is uppercase
+ * @c: parameter to check
  * Return: Either 0 or 1
  */
 
