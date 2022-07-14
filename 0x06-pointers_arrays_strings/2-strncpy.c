@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncat - concatenates two strings
+ * *_strncpy - concatenates two strings
  * @dest: destination
  * @src: source
  * @n: number of bytes
@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	for ( ; i < n; i++)
-		dest[0] = '\0';
+		dest[i] = '\0';
 
 	return (dest);
 }
