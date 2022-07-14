@@ -8,9 +8,9 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, len = 0;
+	int i = 0, len = 0;
 
-	while (dest[index++])
+	while (dest[i++])
 		len++;
 
 	for (i = 0; src[i]; i++)
