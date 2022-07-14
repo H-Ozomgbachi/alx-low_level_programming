@@ -4,6 +4,7 @@
  * *_strcat - concatenate string
  * @dest: firs
  * @src: second
+ * Return: the point to dest
  */
 
 char *_strcat(char *dest, char *src)
