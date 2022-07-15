@@ -1,5 +1,7 @@
 #include "main.h"
 
+int check_seperators(char c);
+
 /**
  * *cap_string - capitalize string
  * @s: string to capitalize
