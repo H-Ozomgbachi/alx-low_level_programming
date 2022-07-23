@@ -2,5 +2,6 @@
 #define MAIN_H
 
 int _putchar(char c);
+int minimum(int n);
 
 #endif /*MAIN_H*/
