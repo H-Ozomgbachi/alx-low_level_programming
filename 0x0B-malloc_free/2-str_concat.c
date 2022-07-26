@@ -11,23 +11,13 @@ char *str_concat(char *s1, char *s2)
 {
 	char *s;
 	unsigned int i, j, len1 = 0, len2 = 0;
-	char *temp1 = s1;
-	char *temp2 = s2;
 
-	while (*s1)
-	{
-		len1++;
-		s1++;
-	}
-
-	while (*s2)
-	{
-		len2++;
-		s2++;
-	}
-
-	s1 = temp1;
-	s2 = temp2;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	len1 = get_str_len(s1);
+	len2 = get_str_len(s2);
 
 	s = malloc(sizeof(char) * (len1 + len2 + 1));
 
@@ -42,10 +32,22 @@ char *str_concat(char *s1, char *s2)
 		s[i] = s2[j];
 		i++;
 	}
-
 	s[i] = '\0';
-
 	return (s);
-
 	free(s);
+}
+
+/**
+ * get_str_len - gets length of a string
+ * @s: parameter passed
+ * Return: length of the string
+ */
+
+int get_str_len(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+	return (len);
 }
