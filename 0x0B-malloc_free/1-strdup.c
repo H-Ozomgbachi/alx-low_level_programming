@@ -11,11 +11,11 @@ char *_strdup(char *str)
 	char *s;
 	unsigned int i, len = 0;
 
-	while (str[len] != '\0')
-		len++;
-
 	if (str == NULL)
 		return (NULL);
+
+	while (str[len] != '\0')
+		len++;
 
 	s = malloc(sizeof(char) * len);
 
