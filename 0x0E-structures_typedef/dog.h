@@ -1,5 +1,5 @@
-#ifndef _DOG_STRUCT_
-#define _DOG_STRUCT_
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
  * struct dog - A type for dog
