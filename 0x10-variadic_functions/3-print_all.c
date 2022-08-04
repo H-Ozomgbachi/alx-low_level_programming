@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	char *temp;
-	int i = 0;
+	int i = 0, x;
 
 	va_start(ap, format);
 	while (format == NULL)
@@ -40,7 +40,8 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 		}
-		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[(i + 1)] != '\0')
+		x = (format[i] == 'c' || format[i] == 'i');
+		if ((x || format[i] == 'f' || format[i] == 's') && format[(i + 1)] != '\0')
 			printf(", ");
 		i++;
 	}
