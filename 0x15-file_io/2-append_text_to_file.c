@@ -23,3 +23,17 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	return (1);
 }
+
+/**
+ * str_len - length of str
+ * @c: string param
+ * Return: lenght
+ */
+size_t str_len(char *c)
+{
+	size_t i;
+
+	for (i = 0; c[i]; i++)
+		;
+	return (i);
+}
